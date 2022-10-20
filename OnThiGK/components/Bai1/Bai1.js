@@ -14,7 +14,7 @@ const Bai1 = () => {
 
   const handleDeleteTask = (index) => {
     let taskListTmp = [...taskList]
-    taskListTmp.splice(index,1)
+    taskListTmp.splice(index,1) 
     setTaskList(taskListTmp)
   }
 
