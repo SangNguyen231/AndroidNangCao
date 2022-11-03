@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 const AddItem = ({ isdata, setData }) => {
 
   const [isItem, setItem] = useState()
-  const [isLink, setLink] = useState('https://res.cloudinary.com/dee6zyobu/image/upload/v1666256748/sample.jpg')
+  const [isLink, setLink] = useState('https://res.cloudinary.com/dee6zyobu/image/upload/v1666256781/cld-sample-4.jpg')
 
   const AddItemList = (text, link) => {
       addDataApi({ id: (isdata.length + 1), item: text, link: link});
@@ -22,9 +22,7 @@ const AddItem = ({ isdata, setData }) => {
         body: JSON.stringify({item: text, link: link}),
       })
         .then((response) => response.json())
-        .then((data) => {
-          setData((prev) => [...prev, data]);
-        })
+
     } catch (error) {
       console.log('Error:', error);
     }

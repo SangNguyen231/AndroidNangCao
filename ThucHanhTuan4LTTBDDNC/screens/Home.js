@@ -5,7 +5,7 @@ const Home = (props) => {
 
     const moveBai1 = () => props.navigation.navigate("Bai1")
     const moveBai2 = () => props.navigation.navigate("Bai2")
-
+    
   return (
     <View style={styles.fram1}>
         <Text style={[styles.title1, { textAlign: 'center' }]}>Thực hành tuần 4 LTTBDD</Text>
